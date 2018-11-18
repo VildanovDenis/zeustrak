@@ -8,9 +8,9 @@ var gulp      = require('gulp'),
     del         = require('del'),
     concat      = require('gulp-concat'),
     uglify      = require('gulp-uglifyjs');
-    // imagemin    = require('gulp-imagemin'), 
-    // pngquant    = require('imagemin-pngquant'),
-    // cache       = require('gulp-cache');
+    imagemin    = require('gulp-imagemin'), 
+    pngquant    = require('imagemin-pngquant'),
+    cache       = require('gulp-cache');
 
 gulp.task('less', function(){ 
     return gulp.src('app/less/**/index.less') 
