@@ -1,0 +1,35 @@
+.footer {
+  height: 50px;
+  background-color: @gray;
+  &__wrapper {
+    .mobile-wrapper;
+  }
+  &__phone {
+    position: relative;
+    display: block;
+    width: 136px; //Произойдет выпадание контента если уменьшить ширину.
+    margin: 0 auto;
+
+    font-size: 16px;
+    line-height: 50px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    color: @black;
+    &::after {
+      .pseudo;
+      bottom: 10px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: @black;
+    }
+  }
+}
+@media (min-width: @desktop) {
+  .footer {
+    &__wrapper {
+      .wrapper;
+    }
+  }
+}

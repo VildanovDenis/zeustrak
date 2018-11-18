@@ -23,7 +23,8 @@
         <h1 class="content__title">О компании</h1>
         <p class="content__description" lang="la">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          eiusmod tempor incididunt ut labore et
+          <span class="content__description--bold">dolore magna aliqua.</span>
         </p>
         <p class="content__description" lang="la">
           Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
@@ -32,13 +33,18 @@
         <p class="content__call" lang="la">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit!
         </p>
-        <a class="content__buy-link">Купить продукт</a>
+        <a class="content__buy-link" href="#">Купить продукт</a>
       </section>
       <section class="reviews">
         <h2 class="reviews__title">Отзывы наших покупателей</h2>
         <div class="reviews__wrapper">
           <article class="reviews__review" lang="en">
-            <img class="reviews__review-avatar" width="80" height="80" />
+            <img
+              class="reviews__review-avatar"
+              src="./img/photo.jpg"
+              width="80"
+              height="80"
+            />
             <div class="reviews__review-text">
               <h3 class="reviews__review-title">Roger Stevenson</h3>
               <p class="reviews__review-description">
@@ -51,7 +57,12 @@
             </div>
           </article>
           <article class="reviews__review" lang="en">
-            <img class="reviews__review-avatar" width="80" height="80" />
+            <img
+              class="reviews__review-avatar"
+              src="./img/photo.jpg"
+              width="80"
+              height="80"
+            />
             <div class="reviews__review-text">
               <h3 class="reviews__review-title">Roger Stevenson</h3>
               <p class="reviews__review-description">
@@ -84,7 +95,9 @@
       </section>
     </main>
     <footer class="footer">
-      <a class="footer__phone" href="#">+7 (999) 999 99 99</a>
+      <div class="footer__wrapper">
+        <a class="footer__phone" href="#">+7 (999) 999 99 99</a>
+      </div>
     </footer>
   </body>
 </html>
